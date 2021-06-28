@@ -1,0 +1,33 @@
+@mixin f-1 {
+    font-size: 20px;
+    line-height: 30px;
+}
+@mixin f-2 {
+    font-size: 24px;
+    line-height: 36px;
+}
+@mixin f-3 {
+    font-size: 28px;
+    line-height: 42px;
+}
+@mixin f-4 {
+    font-size: 40px;
+    line-height: 60px;
+}
+@mixin f-5 {
+    font-size: 32px;
+    line-height: 48px;
+}
+@mixin f-6 {
+    font-size: 16px;
+    line-height: 24px;
+}
+@mixin pad {
+    @media (max-width:768px) {
+        @content
+    }
+}
+@mixin pl-pr15 {
+    padding-right: 15px;
+    padding-left: 15px;    
+}

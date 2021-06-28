@@ -1,0 +1,151 @@
+//nav start
+.nav {
+    padding: 9px 0;
+    @include pad {
+        @include pl-pr15;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #ffffff;
+        z-index: 5;
+    }
+    .menu {
+        @include pad {
+            display: none;
+        }
+        li {
+            @include f-1;
+            a {
+                padding: 10px 16px;
+                color: $nav-gray;
+                i {
+                    padding-right: 4px;
+                }
+            }
+            & :hover {
+                color: $black;
+            }
+        }
+    }
+    .pad-menu {
+        display: none;
+        @include pad {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .pad-cart {
+                margin-right: 39px;
+                a {
+                    color: $nav-gray;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+            .pad-nav {
+                a {
+                    color: $nav-gray;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+        }
+    }
+}
+//nav-perfume start
+.nav-perfume {
+    background: #916000;
+    @include pad {
+        display: none;
+    }
+    ul {
+        display: flex;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        li {
+            margin-right: 28px;
+            a {
+                @include f-1;
+                color: $white;
+            }
+        }
+    }
+}
+//login-banner start
+.login-banner {
+    align-items: center;
+    display: flex;
+    padding: 82px 0;
+    @include pad {
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center;
+        @include pl-pr15;
+    }
+    .login-img {
+        img {
+            width: 730px;
+            height: 730px;
+            object-fit: cover;
+            object-position: center;
+            @include pad {
+                width: 100%;
+                height: 450px;
+            }
+        }
+    }
+    .login-input {
+        h2 {
+            @include f-5;
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        input {
+            width: 350px;
+            height: 38px;
+            padding-left: 12px;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+.forgot-password {
+    a {
+        @include f-6;
+        color: $nav-primary;
+        font-weight: bold;
+        &:hover {
+            color: $white;
+            background: $nav-primary;
+        }
+    }
+}
+.btn-wrap {
+    display: flex;
+}
+.login-btn {
+    border: 1px solid $nav-primary;
+    border-radius: 5px;
+    margin-right: 8px;
+    a {
+        font-size: 16px;
+        line-height: 38px;
+        color: $nav-primary;
+        padding: 8px 16px;
+
+    }
+    &:hover {
+        background: $nav-primary;
+        a {
+            color: $white;
+        }
+    }
+}

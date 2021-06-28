@@ -1,0 +1,399 @@
+//homepage-header start
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #ffffff;
+    z-index: 5;
+    @include pad {
+        @include pl-pr15;
+    }
+    .nav {
+        padding: 9px 0;
+        .menu {
+            @include pad {
+                display: none;
+            }
+            li {
+                @include f-1;
+                a {
+                    padding: 10px 16px;
+                    color: $nav-gray;
+                    i {
+                        padding-right: 4px;
+                    }
+                }
+                & :hover {
+                    color: $black;
+                }
+            }
+        }
+        .pad-menu {
+            display: none;
+            @include pad {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .pad-cart {
+                    margin-right: 39px;
+                    a {
+                        color: $nav-gray;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+                .pad-nav {
+                    a {
+                        color: $nav-gray;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+// banner start
+.banner {
+    background-image: url(/img/index1.jpg);
+    background-size: cover;
+    background-position: right top;
+    width: 100%;
+    height: 870px;
+    @include pad {
+        height: 480px;
+        background-position: center;
+        margin-bottom: 40px;
+    }
+    .banner-box {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 295px;
+        @include pad {
+            justify-content: center;
+            padding-top: 101px;
+        }
+        .banner-text {
+        padding-right: 16px;
+        padding-left: 16px;
+        width: 445px;
+        color: $white;
+        h2 {
+            @include f-4;
+        }
+        p {
+            @include f-2;
+            padding-bottom: 16px;}
+        }
+    }
+}
+.btn {
+    width: 350px;
+    height: 60px;
+    border: 2px solid $white;
+    border-radius: 30px;    
+    a {
+        @include f-3;
+        display: block;
+        color: $white;
+        text-align: center;
+        padding: 8px 109px;
+        &:hover {
+            background: $nav-gray;
+            border-radius: 30px;
+        }
+    }
+}
+// content1 start
+.content1 {
+    .perfume {
+        @include pad {
+            @include pl-pr15;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            @include pad {
+                flex-wrap: wrap;
+                max-width: 100%;
+                flex-direction: column-reverse;
+                padding-bottom: 32px;
+            }
+            .card {
+                width: 350px;
+                margin: 0 auto;
+                padding-top: 157px;
+                @include pad {
+                    padding-top: 8px;
+                }
+                h2 {
+                    @include f-5;
+                    font-weight: bold;
+                }
+                p {
+                    @include f-1;
+                    margin-bottom: 16px;
+                }
+                a {
+                    @include f-6;
+                    color: $text-primary;
+                    &:hover {
+                        background: $nav-primary;
+                        color: $white;
+                    }
+                }    
+            }
+        }
+    }
+    .perfume-intro {
+        display: flex;
+        justify-content: space-between;
+        @include pad {
+            @include pl-pr15;
+            flex-wrap: wrap;
+            max-width: 100%;
+            flex-direction: column-reverse;
+        }
+        ul {
+            margin: 0 auto;
+            padding-top: 92px;
+            @include pad {
+                padding-top: 8px;
+            }
+            li {
+                width: 350px;
+                h2 {
+                    @include f-2;
+                    font-weight: bold;
+                    margin-bottom: 4px;
+                }
+                p {
+                    @include f-6;
+                    margin-bottom: 52px;
+                    @include pad {
+                        margin-bottom: 20px;
+                    }
+                }
+                .btn {
+                    border: 2px solid $black;
+                    a{
+                        @include f-1;
+                        color: black;
+                        padding: 16px 51px;
+                    }
+                }        
+            }
+        }
+    }
+}
+.main-img {
+    @include pad {
+        margin: 0 auto;
+    }
+    img {
+        width: 555px;
+        height: 555px;
+        object-fit: cover;
+        object-position: left top;
+        @include pad {
+            width: 350px;
+            height: 350px;
+        }    
+    }
+}
+.intro-img {
+    @include pad {
+        margin: 0 auto;
+    }
+    img {
+        width: 555px;
+        height: 1080px;
+        object-fit: cover;
+        object-position: center top;
+        @include pad {
+            width: 350px;
+            height: 680px;
+        }
+    }
+}
+.reverse {
+flex-direction: row-reverse;
+}
+// content2 start
+.content2 {
+    background: #E0E0E0;
+    padding: 40px 0;
+    .menu {
+        @include pad {
+            flex-wrap: wrap;
+            max-width: 100%;
+            justify-content: center;
+            @include pl-pr15;
+        }
+        li {
+            margin-right: 30px;
+            h2 {
+                @include f-2;
+            }
+            h3 {
+                @include f-6;
+                font-weight: lighter;
+                margin-bottom: 16px;
+            }
+            p {
+                @include f-6;
+            }
+            span {
+                color: $nav-gray;
+                margin-left: 8px;
+                text-decoration: line-through;
+            }
+            img {
+                width: 100%;
+                height: 540px;
+                object-fit: cover;
+                @include pad {
+                    max-width: 350px;
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
+// content3 start
+.content3 {
+    @include pad {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+        @include pl-pr15;
+        margin-bottom: 40px;
+    }
+    .bottle-img {
+        @include pad {
+            margin: 0 auto;
+        }
+        img {
+            height: 520px;
+            width: 100%;
+            object-fit: cover;
+            @include pad {
+                width: 345px;
+                height: 520px;
+                padding-bottom: 8px;
+            }
+        }
+    }
+}
+.bottle-intro {
+    @include pad {
+        max-width: 350px;
+    }
+    h2 {
+        @include f-5;
+        font-weight: bold;
+    }
+    h3 {
+        @include f-1;
+        margin-bottom: 16px;
+    }
+    p {
+        @include f-6;
+        margin-bottom: 16px;
+    }
+    a {
+        color: $text-primary;
+        &:hover {
+            background: $nav-primary;
+            color: $white;
+        }
+    }
+}
+// suscribe start
+.suscribe {
+    background-image: url(/img/index10.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px; 
+    @include pad {
+        @include pl-pr15;
+    }
+    .container {
+        padding-top: 312px;
+        h2 {
+            @include f-5;
+            color:  $nav-gray;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .input-wrap {
+            display: flex;
+            width: 350px;
+            border: 2px solid $nav-primary;
+            border-radius: 4px;
+            input {
+                width: 219px;
+                padding-left: 16px;
+                padding-right: 84px;
+            }
+            a {
+                display: block;
+                font-size: 16px;
+                line-height: 60px;
+                color: $white;
+                background: $nav-primary;
+                padding: 0 33px;
+                margin-bottom: -1px;
+                &:hover {
+                    background: #4d3900;
+                }
+            }
+        }
+    }
+}
+// footer start
+.footer {
+    background: $nav-primary;
+    @include pad {
+        @include pl-pr15;
+    }
+    .container {
+        .copyright {
+            @include pad {
+                padding: 20px 0;
+            }
+            p {
+                color: $white;
+                font-size: 14px;
+                line-height: 21px;
+                margin-left: 20px;
+            }
+        }
+    }
+    .menu {
+        li {
+            @include f-1;
+            a {
+                color: $white;
+                display: block;
+                padding: 28px 18px;
+            }
+            & :hover {
+                color: $nav-gray;
+            }
+        } 
+    }
+    .bottom-nav {
+        @include pad {
+            display: none;
+        }
+    }
+}
