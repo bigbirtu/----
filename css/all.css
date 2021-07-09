@@ -128,6 +128,9 @@ a {
 .header .nav .menu li :hover {
   color: #000;
 }
+.header .nav h1 a:hover {
+  opacity: 0.7;
+}
 .header .nav .pad-menu {
   display: none;
 }
@@ -349,7 +352,7 @@ a {
   font-size: 20px;
   line-height: 30px;
   color: black;
-  padding: 16px 51px;
+  padding: 13.5px 49px;
 }
 
 @media (max-width: 768px) {
@@ -428,14 +431,13 @@ a {
   font-weight: lighter;
   margin-bottom: 16px;
 }
+.content2 .menu li del {
+  padding-left: 5px;
+  color: #8D8D8D;
+}
 .content2 .menu li p {
   font-size: 16px;
   line-height: 24px;
-}
-.content2 .menu li span {
-  color: #8D8D8D;
-  margin-left: 8px;
-  text-decoration: line-through;
 }
 .content2 .menu li img {
   width: 100%;
@@ -630,6 +632,9 @@ a {
 .nav .menu li :hover {
   color: #000;
 }
+.nav h1 a:hover {
+  opacity: 0.7;
+}
 .nav .pad-menu {
   display: none;
 }
@@ -684,6 +689,9 @@ a {
   font-size: 20px;
   line-height: 30px;
   color: #FFFFFF;
+}
+.nav-perfume ul li :hover {
+  color: #AC8A46;
 }
 
 .login-banner {
